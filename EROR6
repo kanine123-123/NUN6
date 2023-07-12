@@ -1,0 +1,34 @@
+ChatGPT для Telegram, [23.06.2023 21:00]
+Извиняюсь за техническую ошибку. Вот продолжение примера:
+
+```python
+def get_price(pair, exchange):
+    if exchange == 'Binance':
+        url = f'{BINANCE_API_URL}ticker/price?symbol={pair}'
+    elif exchange == 'Bybit':
+        url = f'{BYBIT_API_URL}ticker/price?symbol={pair}'
+    response = requests.get(url)
+    data = response.json()
+    return float(data['price'])
+
+# Асинхронная функция отправки сообщения в Telegram
+async def send_to_telegram(msg
+
+ChatGPT для Telegram, [23.06.2023 21:01]
+Извините, в предыдущем сообщении произошла техническая ошибка. Вот полный код:
+
+```python
+import telebot
+import requests
+import time
+
+# Настройки Telegram-бота
+TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID'
+
+# Настройки бирж
+BINANCE_API_URL = 'https://api.binance.com/api/v3/'
+BYBIT_API_URL = 'https://api.bybit.com/v2/public/'
+
+# Настройки монет
+pairs = ['BTCUSDT', 'ETHUSDT', 'LTCUSDT', 'XRPUSDT', 'BCHUSDT', 'ADAUSDT', 'DOGEUSDT', 'EOSUSDT', 'DOTUSDT', 'SOL
