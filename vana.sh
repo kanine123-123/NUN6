@@ -250,11 +250,11 @@ install_node() {
     
     # Создание кошелька
     log "5/5 Создание кошелька..."
-    vanacli w regen_coldkey --mnemonic stable maple decline arctic melody sniff worth maximum ski tent erase void 
+    vanacli w regen_coldkey --mnemonic hamster daring young mention acquire twelve network coffee sword know glove square 
     check_error "Ошибка создания кошелька"
     # Создание кошелька
     log "5/5 Создание кошелька..."
-    vanacli w regen_hotkey --mnemonic tongue leg submit salad excuse salt scale level silly relax gown fat
+    vanacli w regen_hotkey --mnemonic garlic feature scrap lift image idle page entire oil domain bless diagram
     check_error "Ошибка создания кошелька"
     
     success "Установка ноды завершена!"
