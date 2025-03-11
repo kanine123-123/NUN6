@@ -244,6 +244,8 @@ install_node() {
     
     # Установка CLI
     log "4/5 Установка Vana CLI..."
+    python3 -m venv vana-env
+    source vana-env/bin/activate
     pip install vana
     check_error "Ошибка установки Vana CLI"
     success "Vana CLI установлен"
